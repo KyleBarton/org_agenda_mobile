@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, ViewStyle } from 'react-native';
 import { SafeAreaView, SafeAreaViewProps } from 'react-native-safe-area-context';
-import { spacing } from '../theme';
 import { GradientBackground } from './GradientBackground';
 
 interface ScreenContainerProps extends SafeAreaViewProps {
@@ -32,6 +31,5 @@ const styles = StyleSheet.create({
     },
     content: {
         flex: 1,
-        paddingHorizontal: spacing.md,
     },
 });

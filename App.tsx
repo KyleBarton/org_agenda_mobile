@@ -1,14 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { AppNavigator } from './src/navigation/AppNavigator';
 import { colors } from './src/theme';
 
 export default function App() {
     return (
-        <SafeAreaProvider>
-            <StatusBar style="dark" backgroundColor={colors.background} />
-            <AppNavigator />
-        </SafeAreaProvider>
+        <GestureHandlerRootView style={{ flex: 1 }}>
+            <SafeAreaProvider>
+                <StatusBar style="dark" backgroundColor={colors.background} />
+                <AppNavigator />
+            </SafeAreaProvider>
+        </GestureHandlerRootView>
     );
 }
