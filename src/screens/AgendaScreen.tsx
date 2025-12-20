@@ -3,7 +3,7 @@ import { format } from 'date-fns';
 import { Filter, X } from 'lucide-react-native';
 import React, { useMemo, useState } from 'react';
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
-import Animated, { useAnimatedScrollHandler, useSharedValue } from 'react-native-reanimated';
+import Animated, { useAnimatedRef, useAnimatedScrollHandler, useSharedValue } from 'react-native-reanimated';
 import { PullToReveal } from '../components/PullToReveal';
 import { ScreenContainer } from '../components/ScreenContainer';
 import { TagFilterPanel } from '../components/TagFilterPanel';
@@ -56,6 +56,10 @@ export const AgendaScreen = () => {
         return baseTasks.filter(t => t.tags && t.tags.includes(selectedCategory));
     }, [baseTasks, selectedCategory]);
 
+    const flatListRef = useAnimatedRef<any>();
+
+    // ... existing code ...
+
     const handleSelectTag = (tag: string | null) => {
         setSelectedCategory(tag);
         if (tag) {
@@ -65,7 +69,13 @@ export const AgendaScreen = () => {
             });
             setIsFilterVisible(false); // Auto-close panel
         }
+        // Scroll to top when filter changes
+        flatListRef.current?.scrollToOffset({ offset: 0, animated: true });
     };
+
+    // ... existing code ...
+
+
 
     const getTitle = () => {
         switch (filter) {
@@ -126,6 +136,8 @@ export const AgendaScreen = () => {
                 />
 
                 <Animated.FlatList
+                    ref={flatListRef}
+                    style={{ flex: 1 }}
                     data={tasks}
                     keyExtractor={(item) => item.id}
                     renderItem={({ item }) => <TaskCard task={item} />}
@@ -184,7 +196,7 @@ const styles = StyleSheet.create({
         fontWeight: '600',
     },
     listContent: {
-        paddingBottom: spacing.xxl,
+        paddingBottom: spacing.xxl + 80, // Add space for bottom tab bar
         paddingHorizontal: spacing.md,
         minHeight: '100%',
     },

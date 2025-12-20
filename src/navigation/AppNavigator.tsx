@@ -1,10 +1,8 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { BlurView } from 'expo-blur';
 import { Clock, Inbox, Layers } from 'lucide-react-native';
 import React from 'react';
-import { StyleSheet } from 'react-native';
 import { AgendaScreen } from '../screens/AgendaScreen';
 import { CaptureScreen } from '../screens/CaptureScreen';
 import { colors } from '../theme';
@@ -22,14 +20,20 @@ const TabNavigator = () => {
                     bottom: 0,
                     left: 0,
                     right: 0,
-                    elevation: 0,
-                    borderTopWidth: 0,
-                    backgroundColor: 'transparent',
+
+                    borderTopWidth: 1,
+                    borderTopColor: colors.border,
+                    backgroundColor: colors.background,
                     height: 80,
+                    shadowColor: '#000',
+                    shadowOffset: {
+                        width: 0,
+                        height: -2,
+                    },
+                    shadowOpacity: 0.1,
+                    shadowRadius: 4,
+                    elevation: 8,
                 },
-                tabBarBackground: () => (
-                    <BlurView tint="light" intensity={80} style={StyleSheet.absoluteFill} />
-                ),
                 tabBarActiveTintColor: colors.primary,
                 tabBarInactiveTintColor: colors.text.secondary,
                 tabBarShowLabel: true,

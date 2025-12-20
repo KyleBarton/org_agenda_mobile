@@ -29,6 +29,8 @@ export const PullToReveal: React.FC<PullToRevealProps> = ({ children, onTrigger,
     const hasTriggered = useSharedValue(false);
 
     const pan = Gesture.Pan()
+        .failOffsetY([-5, Number.MAX_SAFE_INTEGER]) // Fail if scrolling down (finger moves up)
+        .activeOffsetY([5, Number.MAX_SAFE_INTEGER]) // Activate only if pulling down
         .onUpdate((event) => {
             // Only allow pulling down if we are at the top
             if (isScrollAtTop.value && event.translationY > 0) {
@@ -50,10 +52,7 @@ export const PullToReveal: React.FC<PullToRevealProps> = ({ children, onTrigger,
             }
             translationY.value = withSpring(0, { damping: 15, stiffness: 100 });
             hasTriggered.value = false;
-        })
-        .simultaneousWithExternalGesture(
-            { current: null } as any
-        );
+        });
 
     const animatedStyle = useAnimatedStyle(() => {
         return {
