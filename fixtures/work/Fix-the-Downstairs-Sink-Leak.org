@@ -1,0 +1,25 @@
+* Fix the Downstairs Sink Leak   :Fix_The_Downstairs_Sink_Leak:
+** Purpose/Principals
+There is a small leak in the downstairs bathroom sink. A normal
+handwash will not activate it, but extensive use of the sink will
+eventually lead to drops on the bottom. There appears to be a problem
+with the seal attached to the drain stopper.
+** Vision & Outcomes
+** Brainstorming
+** Organization
+** Reference Data
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+*** Next Actions
+**** NEXTACTION Google the Anatomy of a sink to find out which part is causing the leak
+:PROPERTIES:
+:CATEGORY: research-30min
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from              [2023-08-14 Mon 10:04]
+:END:
+You know which part physically, you just don't know what it's called
+or what it's supposed to be like. Afterwards, you can research more
+about how such a leak could occur and how to fix.

@@ -1,0 +1,95 @@
+* Get A Pro Finance Team Set up for Me And Zoe   :GetAProFinanceTeamSetUpForMeAndZoe:
+** Purpose/Principals
+There are a few financial-related things for which I think we'd be better off with professional assistance:
+- Tax preparation
+- Investment guidance
+- Retirement planning/fixed income investment
+- (Maybe someday) Small/local business investment
+** Vision & Outcomes
+** Brainstorming
+** Organization
+I think tax prep is where to start here. I'm 99% sure that's what we
+need more than anything else. I can use this as an excuse to ask, more
+broadly, what financial services are available.
+*** <2023-10-27>
+Good progress this week! Two new client inquiries out and a lead on
+another one as well below.
+*** <2025-06-25>
+Honestly, I haven't been super impressed with what I've seen on the
+market so far. A tax professional might be nice eventually, but paying
+for the advanced Turbotax service with audit protection is probably
+enough for the time being. Moving active stuff to someday/maybe and
+putting the project on ice for now.
+** Reference Data
+*** Tax Professionals
+To contact: 
+Gustafson & Co: https://www.guscpas.com/get-in-touch-contact-page
+
+
+Already contacted:
+Thunderegg accounting: https://thundereggpdx.com/
+HandyReagan: http://www.handyreagan.com/
+
+** Future Work To Consider
+*** Someday Maybe
+
+**** SOMEDAYMAYBE Call/email Gustafson & Co re: CPA work
+:PROPERTIES:
+:CATEGORY: phonecalls-15min
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2025-06-25 Wed 15:43]
+- State "NEXTACTION" from "IN"         [2023-10-25 Wed 14:23]
+:END:
+https://www.guscpas.com/get-in-touch-contact-page
+**** DONE Compile a list of 3 or more fiduciary/financial advisors to email or otherwise contact
+CLOSED: [2025-06-25 Wed 15:43]
+:LOGBOOK:
+- State "DONE"       from "SOMEDAYMAYBE" [2025-06-25 Wed 15:43]
+- State "SOMEDAYMAYBE" from              [2023-07-08 Sat 13:37]
+:END:
+
+**** DONE Look at the OnPoint CU offerings for CPAs/Fidcuriaries.
+CLOSED: [2025-06-25 Wed 15:40]
+:LOGBOOK:
+- State "DONE"       from "SOMEDAYMAYBE" [2025-06-25 Wed 15:40]
+- State "SOMEDAYMAYBE" from              [2024-06-30 Sun 09:41]
+:END:
+
+***** <2025-06-25>
+Actually ended up doing this - they work with Edward Jones IIRC. In any event, I wasn't very impressed with their offerings, and don't want to pursue further right now.
+** Actionables
+*** Waiting For
+**** DONE Awaiting word from Thunderegg accounting on new client inquiry
+CLOSED: [2025-06-25 Wed 15:43]
+:PROPERTIES:
+:CATEGORY: agenda-new-service-provider
+:END:
+:LOGBOOK:
+- State "DONE"       from "WAITINGFOR" [2025-06-25 Wed 15:43]
+- State "WAITINGFOR" from              [2023-10-25 Wed 14:27]
+:END:
+
+Never got back to me. It's been two years, moving on.
+**** DONE Awaiting word from HandyReagan accounting on new client inquiry
+CLOSED: [2025-06-25 Wed 15:43]
+:PROPERTIES:
+:CATEGORY: agenda-new-service-provider
+:END:
+:LOGBOOK:
+- State "DONE"       from "WAITINGFOR" [2025-06-25 Wed 15:43]
+- State "WAITINGFOR" from              [2023-10-25 Wed 14:28]
+:END:
+
+Never got back to me. It's been almost 2 years, moving on.
+*** Next Actions
+**** DONE Compile a list of 3 or more tax professionals to email or otherwise contact
+CLOSED: [2023-10-25 Wed 14:28]
+:PROPERTIES:
+:CATEGORY: personal-online-45min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-10-25 Wed 14:28]
+- State "NEXTACTION" from              [2023-07-08 Sat 13:36]
+:END:
+Should be local and not associated with a banking institution that I distrust.

@@ -1,0 +1,82 @@
+* Project KLH   :Project_Klh:
+** Purpose/Principals
+A text editor written in Rust that I will likely never finish.
+** Vision & Outcomes
+** Brainstorming
+** Organization
+*** <2023-08-18>
+Did a fair amount of work on this in the last few weeks actually - it
+was really fun! And I'm starting to put together ideas of how the
+display plugin will function. It's complex because it's exposing the
+first instance of one plugin depending on another, rather than simply
+depending on the KLH infrastructure. Establishing a proper API for
+this will require some care. Still need to wrap up the readme stuff so
+I can be clear and free to work on that display stuff.
+*** <2023-09-01>
+Finally wrapped up that old refactoring exercise! Started working on
+the display plugin, but haven't made much progress.
+*** <2023-09-29>
+Holy shit, should kved just be a plugin here? I know I started it in
+haskell, but this might make it worth moving over...
+** Reference Data
+*** Why Multithreading in eMacs is hard
+Worth remembering when designing:
+https://www.youtube.com/watch?v=7H1Pe9HkJ7I
+- In short, it's because there's a lot of shared state and a
+  horizontal threading design. Gross.
+*** Github
+**** Repository
+https://github.com/KyleBarton/klh/
+**** Project
+https://github.com/users/KyleBarton/projects/2
+*** Potential UI: Iced
+https://github.com/iced-rs/iced
+
+Especially now that you better understand Elm, this could be a really
+effective way to get an early UI off the ground.
+** Future Work To Consider
+*** Someday Maybe
+**** DONE Start Tracking +Finish (?)+ Klh here
+CLOSED: [2023-08-07 Mon 15:49]
+:LOGBOOK:
+- State "DONE"       from "SOMEDAYMAYBE" [2023-08-07 Mon 15:49]
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2022-11-26 Sat 14:40]
+- State "NEXTACTION" from "IN"         [2022-11-26 Sat 14:40]
+:END:
+**** SOMEDAYMAYBE Integrate my GTD process into the project board
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from              [2023-08-11 Fri 17:14]
+:END:
+For now, I'm letting the project board handle it when it's active,
+with notes in here to revisit if that becomes stale.
+** Actionables
+*** Waiting For
+*** Next Actions
+**** NEXTACTION Get the Display Plugin Communicating to the Buffers Plugin in a way you like
+:PROPERTIES:
+:CATEGORY: coding-ongoing
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from              [2023-09-01 Fri 14:43]
+:END:
+
+**** DONE Complete Documentation and Api Response Structure
+CLOSED: [2023-08-09 Wed 22:11]
+:PROPERTIES:
+:CATEGORY: personal-online-60min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-08-09 Wed 22:11]
+- State "NEXTACTION" from              [2023-08-07 Mon 15:50]
+:END:
+https://github.com/KyleBarton/klh/issues/7
+
+**** DONE Draft READMEs for all the major components and then close #7
+CLOSED: [2023-09-01 Fri 13:26]
+:PROPERTIES:
+:CATEGORY: personal-online-60min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-09-01 Fri 13:26]
+- State "NEXTACTION" from              [2023-08-18 Fri 15:46]
+:END:

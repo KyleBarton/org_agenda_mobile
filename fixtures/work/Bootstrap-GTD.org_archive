@@ -1,0 +1,68 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/kylebarton/Dropbox/Local/Org/gtd/work/Bootstrap-GTD.org
+
+
+* DONE add an in progress status to time tasks when you want
+CLOSED: [2023-08-04 Fri 15:39]
+:PROPERTIES:
+:CATEGORY: personal-yakshaving-15min
+:ARCHIVE_TIME: 2023-08-04 Fri 23:02
+:ARCHIVE_FILE: ~/Dropbox/Local/Org/gtd/work/Bootstrap-GTD.org
+:ARCHIVE_OLPATH: Bootstrap GTD/Future Work To Consider/Someday Maybe
+:ARCHIVE_CATEGORY: personal-yakshaving-15min
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: BootstrapGtd
+:END:
+:LOGBOOK:
+- State "DONE"       from "SOMEDAYMAYBE" [2023-08-04 Fri 15:39]
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2023-07-29 Sat 17:45]
+- State "NEXTACTION" from "IN"         [2023-07-06 Thu 19:44]
+:END:
+
+Might not actually be needed, since I can just clock in and out if I want to time things.
+** <2023-08-04>
+Yeah, the Clock IN/Clock OUT utility works just fine here. even shows
+up in agenda mode. Awesome.
+
+* DONE Investigate if I can probably use org-agenda to look at things that were moved in status per day
+CLOSED: [2023-08-04 Fri 15:39]
+:PROPERTIES:
+:CATEGORY: personal-yakshaving-30min
+:ARCHIVE_TIME: 2023-08-04 Fri 23:04
+:ARCHIVE_FILE: ~/Dropbox/Local/Org/gtd/work/Bootstrap-GTD.org
+:ARCHIVE_OLPATH: Bootstrap GTD/Future Work To Consider/Someday Maybe
+:ARCHIVE_CATEGORY: personal-yakshaving-30min
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: BootstrapGtd
+:END:
+:LOGBOOK:
+- State "DONE"       from "SOMEDAYMAYBE" [2023-08-04 Fri 15:39]
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2023-07-28 Fri 15:57]
+- State "NEXTACTION" from "IN"         [2023-07-23 Sun 11:27]
+:END:
+That seems very org-agenda-y
+** <2023-08-04>
+Yeah, pretty much figured out that this is what the agenda view does
+for me, at various (configurable) levels of verbosity.
+
+* DONE Need an agenda view for DONE things somehow, I think
+CLOSED: [2023-08-04 Fri 15:38]
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-08-04 Fri 23:04
+:ARCHIVE_FILE: ~/Dropbox/Local/Org/gtd/work/Bootstrap-GTD.org
+:ARCHIVE_OLPATH: Bootstrap GTD/Future Work To Consider/Someday Maybe
+:ARCHIVE_CATEGORY: Bootstrap-GTD
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: BootstrapGtd
+:END:
+:LOGBOOK:
+- State "DONE"       from "SOMEDAYMAYBE" [2023-08-04 Fri 15:38]
+- State "SOMEDAYMAYBE" from "IN"         [2023-07-08 Sat 15:38]
+:END:
+Want to measure my productivity
+** <2023-07-21>
+I think org-agenda might do this for me, if I can integrate the calendar view with these log stamps.
+** <2023-08-04>
+Yeah, once I changed `org-log-done' back to 'timed, like it was before, this worked great!

@@ -1,0 +1,231 @@
+* Haskell Cli Text Editor   :Haskell_Cli_Text_Editor:
+** Purpose/Principals
+Build a CLI text editor in Haskell. Learn about haskell and text
+editing along the way.
+** Vision & Outcomes
+Build a cli-based text editor which competes with sed & grep written
+in haskell. It will be a superior editor for the following reasons:
+- It will be both a query-er (like grep) and an editor (like sed)
+- Its query syntax will be natural, e.g.:
+  : {thing} -f ./text.txt 'where {pattern1} or {pattern2}'
+  - Syntax TBD
+  - Also, consider inferring files/dirs/streams
+- It will provide a haskell library with the bulk of the functionality for work with other projects
+- It will include execution support:
+  - diff prep: an option to see what changes you'll make before saving
+    - similarly, saved diffs
+    - similarly, optional backups
+  - immediate restore capabilities
+See more in Brainstorming (cut off here)
+** Brainstorming
+*** Features
+Copied so far from initial vision/outcomes:
+- It will be both a query-er (like grep) and an editor (like sed)
+- Its query syntax will be natural, e.g.:
+  : {thing} -f ./text.txt 'where {pattern1} or {pattern2}'
+  - Syntax TBD
+  - Also, consider inferring files/dirs/streams
+- It will provide a haskell library with the bulk of the functionality for work with other projects
+- It will include execution support:
+  - diff prep: an option to see what changes you'll make before saving
+    - similarly, saved diffs
+    - similarly, optional backups
+  - immediate restore capabilities
+- Reasoning in different interpretation modes:
+  - Lines
+  - Paragraphs
+  - Blobs
+  - Semantic language structures (using tree-sitter presumably)
+** Organization
+*** <2023-09-29>
+Ultimately, this might be better composed in rust, just so it can be
+built as a plugin to KLH. Keep learning haskell either way!
+*** <2024-06-23>
+The more you've thought about this, the more it's turned into a
+version-management solution for individual files. Like a super
+lightweight Git. Honestly this might be good. You don't need to decide
+anything right now because it's not in active development.
+
+You could do it in rust for better performance. The multi-threading
+might be nice. But honestly if it's just versioning, haskell will
+likely work fine.
+*** <2024-06-30>
+Appropriately on ice for now. Can revisit whenever.
+** Reference Data
+The big delivery, on the editing side at least, is change management.
+
+The big delivery on query side is semantic structures and hopefully a tree-sitter tie-in
+*** CodeName: kved
+In the spec below it's "changer", but that doesn't really work because it's a querier too.
+- Haskell
+- Change Management
+- Semantic Querying
+- Sed integration
+- CLI
+- haskell change management - hcm
+- lightweight version managmenet - lvm
+- preview, stage, change, version - pcsv
+- edit, preview, stage, version - epsv
+- edit, diff, commit, version - edcv
+- versioned editor with diff and commit - vedac
+  - versioned editor - ved
+  - kyle's versioned editor: kved
+    - Ok, this is what it's called for now: kved. Aka "kay ved". Will
+      be renamed later
+*** Spec
+**** changer -f FILE {action}
+Operate an action on a file
+**** changer {action}
+Operates on stdin
+**** actions:
+***** Edit
+Replacing a string
+: changer -f ~/test.txt edit replace "this string" with "this other string"
+Replacing a regex pattern
+: changer -f ~/test.txt edit replace pattern "this pattern" with "this other pattern"
+****** Change Management
+With change management turned on, the changes should be previewed before written:
+: changer -f ~/test.txt edit replace "this string" with "this other string"
+#+BEGIN_SRC sh
+    You are about to change the following:
+  "I love to write -this string-+this other string+ inside this file!"
+  "On this line with -this string-+this other string+ i will start my rock"
+  ...
+  Press:
+    ENTER to scroll through the lines changed
+    w to complete the change
+    N for the first N lines changed
+    q to exit the change
+#+END_SRC
+****** Lightweight version management
+You should be able to save files for a revert as well:
+: changer -f ~/test.txt edit replace "this string" with "this other string" options versioned
+(Side thought, this should shortened if you want):
+: changer -f ~/test.txt e r "this string" w "this other string" o r
+If that happens, after committing the change, you should see an option to revert:
+: changer -f ~/test.txt edit undo 1
+: changer -f ~/test.txt e u 1
+Will revert the last 1 change that occurred:
+#+BEGIN_SRC sh
+  YOU HAVE BEGUN TO REVERT
+  o -> o -> o (You are here)
+  o -> o (You will be here) -> o
+
+  You are about to change the following:
+  "I love to write -this other string-+this string+ inside this file!"
+  "On this line with -this other string-+this string+ i will start my rock"
+  ...
+  Press:
+    ENTER to scroll through the lines changed
+    w to complete the change
+    N for the first N lines changed
+    q to exit the change
+    t to enter tree-versioned mode
+#+END_SRC
+
+If you haven't re-edited the file, future versions are preserved as well. You can access them with the "versions" key:
+: changer -f ~/test.txt edit versions
+#+BEGIN_SRC
+ENTERING VERSIONED MODE
+o -> o -> o (You are here) -> o -> o
+1 -> 2 -> 3                -> 4 -> 5
+
+Press the version to which you'd like to change: [1]
+#+END_SRC
+Pressing the button should move you to an altered edit screen:
+#+BEGIN_SRC sh
+  VERSIONED MODE
+
+  1 -> 2 -> 3 (You are here) -> 4 -> 5
+  1 (You will be here) -> 2 -> 3 -> 4 -> 5
+
+  Press:
+  ENTER to preview lines changed # this takes us to the edit mode that we know and love
+  a new number N to move to a different version # tbd what happens when you enter 3 and it's the identity function?
+#+END_SRC
+
+Editing the file outside of the context of changer will cap its
+history at present day. So for instance, if you had:
+1 -> 2 -> 3 -> 4 -> 5
+
+And you versioned it to 3, you'd have the following saved in changer:
+1 -> 2 -> 3 (You are here) -> 4 -> 5 (Latest known change)
+
+However, if you then edited the file outside of changer, it would only
+know the following at next edit:
+1 -> 2 -> 3 -> 4 (You are here) (Latest known change)
+
+In this case, change 4 is the totality of all changes you made outside
+of changer. It calculates the diff from change version 3 to add to the
+tree.
+****** Other tools!
+This is the key. You should be able to use sed, awk, etc, inside:
+: changer -f ~/test.txt edit sed 's/hello/world'
+
+This is nice because it will still work with version management
+: changer -f ~/test.txt edit sed 's/hello/world' versioned
+***** Query
+****** Semantic context
+changer should know about a number of semantic contexts and try to apply when asked:
+- Lines (the default)
+- Paragraphs (basically, a carriage return followed by an empty line or followed by an indentation)
+- Sentences
+- Code constructs (eventually)
+
+querying might look like so:
+
+: changer -f ~/test.txt query "this string" per sentence
+#+BEGIN_SRC sh
+ [1] "I love /this string/."
+ [1] "What a thing /this string/ is!"
+#+END_SRC
+Line numbers should be included in the output, even though they would
+be default in lines. The above says that the occurrence was found in
+two different sentences, but on the same line. So:
+: changer -f ~/test.txt query "this stirng" per line
+#+BEGIN_SRC sh
+ [1] "I love /this string/...  a thing /this string/ is!"
+#+END_SRC
+Changer will attempt to show occurrences in the line, but won't stress the visualization out. This should be optionally configurable
+** Future Work To Consider
+*** Someday Maybe
+**** SOMEDAYMAYBE Changer should do the same for DBS
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2023-09-25 Mon 09:29]
+:END:
+If you can do it for files, why not the same for certain DB changes as well?
+**** SOMEDAYMAYBE Could use fswatch with your file versioner
+:PROPERTIES:
+:CATEGORY: personal-curiousity
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2023-12-12 Tue 18:03]
+:END:
+Better than lower-level stuff like inotify probably
+https://github.com/emcrisostomo/fswatch
+**** SOMEDAYMAYBE Finish Learn You a Haskell
+:PROPERTIES:
+:CATEGORY: learning-ongoing
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2024-06-30 Sun 09:23]
+- State "NEXTACTION" from              [2023-09-10 Sun 16:24]
+:END:
+
+** Actionables
+*** Waiting For
+*** Next Actions
+**** DONE Complete a good haskell editing setup in emacs
+CLOSED: [2023-09-12 Tue 14:54]
+:PROPERTIES:
+:CATEGORY: personal-online-60min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-09-12 Tue 14:54]
+- State "NEXTACTION" from              [2023-09-10 Sun 16:24]
+:END:
+Timeboxing at 60 minutes for now - might become a project.
+
+Actually, this ended up being fairly easy. I re-installed LSP-mode and
+haskell-lsp and it works really well now. Nothing more I feel I need
+to do at the moment.

@@ -1,0 +1,38 @@
+* Get Trav and Lindsey their Wedding Present   :Get_Trav_And_Lindsey_Their_Wedding_Present:
+** Purpose/Principals
+** Vision & Outcomes
+** Brainstorming
+** Organization
+** Reference Data
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+*** Next Actions
+**** DONE Write Trav and Lindsey's Card for Wedding Present
+CLOSED: [2025-06-29 Sun 12:35]
+:PROPERTIES:
+:CATEGORY: house-chores
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2025-06-29 Sun 12:35]
+- State "NEXTACTION" from "IN"         [2025-06-28 Sat 20:47]
+:END:
+**** DONE Ask Zoe to wrap Trav and Lindsey's Leathermen
+CLOSED: [2025-10-21 Tue 14:58]
+:PROPERTIES:
+:CATEGORY: agenda-zoe
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2025-10-21 Tue 14:58]
+- State "NEXTACTION" from "IN"         [2025-06-28 Sat 20:47]
+:END:
+**** DONE Transcribe T & L's message to the actual card
+CLOSED: [2025-10-21 Tue 14:58]
+:PROPERTIES:
+:CATEGORY: house-chores
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2025-10-21 Tue 14:58]
+- State "NEXTACTION" from "IN"         [2025-06-30 Mon 10:22]
+:END:

@@ -1,0 +1,33 @@
+* Stair Safety Project   :Stair_Safety_Project:
+** Purpose/Principals
+** Vision & Outcomes
+- Firm up bannister
+- Fix the carpet underneath it
+** Brainstorming
+** Organization
+** Reference Data
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+*** Next Actions
+**** DONE Google how to secure stair carpet
+CLOSED: [2025-10-21 Tue 14:57]
+:PROPERTIES:
+:CATEGORY: research-30min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2025-10-21 Tue 14:57]
+- State "NEXTACTION" from              [2024-08-18 Sun 20:32]
+:END:
+
+**** NEXTACTION Look at the bannister bolts
+:PROPERTIES:
+:CATEGORY: house-chores
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from              [2024-08-18 Sun 20:33]
+:END:
+How is it secured? can it be made more secure easily?
+
+Assess after you see what you're working with.

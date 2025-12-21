@@ -1,0 +1,131 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/kylebarton/Dropbox/Local/Org/gtd/work/Improve-Home-Internet-Situation.org
+
+
+* Improve Home Internet Situation   :ImproveHomeInternetSituation:
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-06-30 Sun 09:34
+:ARCHIVE_FILE: ~/Dropbox/Local/Org/gtd/work/Improve-Home-Internet-Situation.org
+:ARCHIVE_CATEGORY: Improve-Home-Internet-Situation
+:END:
+** Purpose/Principals
+Home internet has issues. Two major ones:
+- Kitchen display not working all the time
+- Roku TV SUCKs and also fails to connect a lot.
+** Vision & Outcomes
+** Brainstorming
+** Organization
+*** <2023-07-23>
+I'm not getting a new TV yet. Instead, I've purchased a new google TV
+stick. I will plug this into roku TV and see how it works. May still
+need to replace roku TV, but can do that with a non-smart TV now.
+*** <2023-07-28>
+Moving the Upstairs mesh modem has helped a /lot/. I'm now getting no
+issues with the Google Nest device, and internet seems to remain
+functional in the office too.
+
+The RokuTV is better, but still struggling a bit... it froze up on
+youtube last night. Google TV stick is still a good idea, and
+hopefully I can plug it right in and bypass Roku's software.
+*** <2023-08-04>
+This has been a rousing success
+- Moving the Deco node improved internet in both kitchen and bedroom,
+  while office remained performant enough to handle it.
+- Google TV in the bedroom, via the roku HDMI cable, is soooo much
+  better. Roku is still in the way a bit (e.g. can't turn the TV /on/
+  with Google TV remove), so we should still replace before I wrap up
+  this project.
+
+Still, our lives are soooo much better than a week ago w/rt the
+underlying things to improve here.
+*** <2023-09-29>
+I still get occasional issues from kitchen and bedroom google. Not
+very common anymore, and we may have to just live with it a
+bit. Unplugging and re-plugging seems to work fine.
+*** <2024-06-23>
+This is mostly a non-issue at this point. Consider moving the remainin
+someday/maybes to Misc and closing this out? The major point of it has
+been accomplished.
+*** <2024-06-30>
+As discussed above, closing out.
+** Reference Data
+*** TV
+
+**** Potential Replacements
++- Hi-sense 43 inch: https://www.amazon.com/dp/B09WQNYZGV/?coliid=IZDYAY0TCL0P5&colid=17LL2A4DYMSK1&ref_=list_c_wl_lv_ov_lig_dp_it&th=1+
+Nah this is a smart one. Get a dumb tv bro
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+**** DONE Awaiting delivery of Google TV for Bedroom
+:PROPERTIES:
+:CATEGORY: personal-shipment-delivery
+:END:
+:LOGBOOK:
+- State "DONE"       from "WAITINGFOR" [2023-07-31 Mon 15:22]
+- State "WAITINGFOR" from              [2023-07-23 Sun 12:18]
+:END:
+
+*** Next Actions
+**** DONE Discuss possibly moving to CenturyLink with Zoe
+:PROPERTIES:
+:CATEGORY: agenda-zoe
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-28 Fri 16:06]
+- State "NEXTACTION" from              [2023-07-15 Sat 20:25]
+:END:
+**** DONE try moving the upstairs wifi closer to the downstairs wifi
+:PROPERTIES:
+:CATEGORY: personal-housework-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-23 Sun 16:13]
+- State "NEXTACTION" from "IN"         [2023-07-23 Sun 11:47]
+:END:
+Possibly in the kitchen next to the coffee maker?
+**** DONE Find out what it would cost to add a Deco node
+:PROPERTIES:
+:CATEGORY: personal-online-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-21 Fri 19:45]
+- State "NEXTACTION" from              [2023-07-15 Sat 20:25]
+:END:
+Write it down and then discuss with Zoe.
+Costs about $60. Not too expensive at all:
+https://www.amazon.com/TP-Link-Deco-Whole-Home-System/dp/B06WRSBYVK?ref_=ast_sto_dp&th=1
+**** DONE Restart kitchen display and confirm if Deco remembered to keep it off mesh
+:PROPERTIES:
+:CATEGORY: personal-housework-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-21 Fri 16:33]
+- State "NEXTACTION" from "IN"         [2023-07-15 Sat 20:26]
+:END:
+
+**** DONE Next time the internet goes out on Roku TV, look at Deco to measure health
+:PROPERTIES:
+:CATEGORY: personal-housework-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-23 Sun 12:19]
+- State "NEXTACTION" from              [2023-07-21 Fri 19:08]
+:END:
+
+**** DONE Measure a 43 inch TV on the bedroom dresser to see if it's feasible
+:PROPERTIES:
+:CATEGORY: personal-housework-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-23 Sun 12:19]
+- State "NEXTACTION" from "NEXTACTION" [2023-07-23 Sun 12:19]
+- State "NEXTACTION" from              [2023-07-23 Sun 11:46]
+:END:
+Actual Dimensions:
+- 7.7"D x 37.9"W x 24.2"H
+
+Looks a little crowded honestly. Let's see if we can make our old 32" work for now.

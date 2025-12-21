@@ -1,0 +1,59 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/kylebarton/Dropbox/Local/Org/gtd/work/V2-of-Platform-Team-Dashboards.org
+
+
+* V2 of Platform Team Dashboards   :V2_Of_Platform_Team_Dashboards:
+:PROPERTIES:
+:ARCHIVE_TIME: 2023-12-29 Fri 10:55
+:ARCHIVE_FILE: ~/Dropbox/Local/Org/gtd/work/V2-of-Platform-Team-Dashboards.org
+:ARCHIVE_CATEGORY: V2-of-Platform-Team-Dashboards
+:END:
+** Purpose/Principals
+We have our initial team dashboard, but it's very limited and
+clunky. We should aim to move more towards an API-layer dashboard like
+in Dynatrace, with a focus on individual API response times and
+failure rates.
+** Vision & Outcomes
+Improved dashboard review. I may want to take this on a bit as an
+individual contributor in order to lessen the load on the rest of the
+team. However, these tasks should start appearing in our sprints once
+we've settled a bit.
+** Brainstorming
+
+Create more API-by-API views of response time
+** Organization
+** Reference Data
+*** V1 Team Dashboard
+https://www.notion.so/Team-Dashboard-0c83b8d0c4dd4b91b976a427623fef82
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+**** DONE Poll the team for desired metrics in the dashboard from Dynatrace
+CLOSED: [2023-09-29 Fri 17:16]
+:PROPERTIES:
+:CATEGORY: awaiting-specific-date
+:END:
+:LOGBOOK:
+- State "DONE"       from "WAITINGFOR" [2023-09-29 Fri 17:16]
+- State "WAITINGFOR" from              [2023-09-12 Tue 14:02]
+:END:
+Awaiting 9/14 release Closing because I think /I'm/ going to just own
+this at first. It'll give me a needed distraction from staring at the
+backlog all day.
+*** Next Actions
+**** DONE Spend 20 minutes playing around with JVM metrics in Prod Dynatrace
+CLOSED: [2023-12-12 Tue 18:23]
+:PROPERTIES:
+:CATEGORY: work-online-30min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-12-12 Tue 18:23]
+- State "NEXTACTION" from "DONE"       [2023-09-29 Fri 17:24]
+- State "DONE"       from "WAITINGFOR" [2023-09-29 Fri 17:16]
+- State "WAITINGFOR" from              [2023-09-12 Tue 14:02]
+:END:
+Try to get the CPU Util of the graphql API JVM.
+Awaiting 9/14 release

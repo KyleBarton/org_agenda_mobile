@@ -1,0 +1,34 @@
+* Buy New Nonstick Pans   :BuyNewNonstickPans:
+** Purpose/Principals
+The ones we have are dangerously damaged at this point. Need to figure
+out what sizes and how much. And which brand.
+** Vision & Outcomes
+** Brainstorming
+** Organization
+** Reference Data
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+**** DONE Awaiting +Ask+ Mom's response if she recommends a particular non-stick pan brand right now.
+CLOSED: [2023-09-01 Fri 15:07]
+:PROPERTIES:
+:CATEGORY: agenda-mom
+:END:
+:LOGBOOK:
+- State "DONE"       from "WAITINGFOR" [2023-09-01 Fri 15:07]
+- State "WAITINGFOR" from "NEXTACTION" [2023-09-01 Fri 13:32]
+- State "NEXTACTION" from              [2023-07-08 Sat 13:31]
+:END:
+Maybe all-clad? Don't know if they do nonstick.
+***** <2023-09-01>
+Texted!
+*** Next Actions
+**** NEXTACTION Shop online for ScanPan and All-clad
+:PROPERTIES:
+:CATEGORY: online-shopping-45min
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from              [2023-09-01 Fri 15:07]
+:END:
+Compared prices. Check for BPA.

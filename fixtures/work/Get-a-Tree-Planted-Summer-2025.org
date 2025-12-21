@@ -1,0 +1,30 @@
+* Get a Tree Planted Summer 2025   :Get_A_Tree_Planted_Summer_2025:
+** Purpose/Principals
+This is needed in order to stay in compliance with the city.
+** Vision & Outcomes
+** Brainstorming
+** Organization
+** Reference Data
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+*** Next Actions
+**** DONE Call the tree czar (on the permit) to confirm if it must be a street tree or just a private tree
+CLOSED: [2025-10-21 Tue 14:57]
+:PROPERTIES:
+:CATEGORY: phonecalls-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2025-10-21 Tue 14:57]
+- State "NEXTACTION" from              [2025-06-25 Wed 15:55]
+:END:
+
+**** NEXTACTION Find the web address where I can look online to find acceptable tree species.
+:PROPERTIES:
+:CATEGORY: house-chores
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from              [2025-06-25 Wed 15:56]
+:END:
+Should be on the permit somewhere

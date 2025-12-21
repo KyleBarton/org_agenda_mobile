@@ -1,0 +1,19 @@
+* Clear the bee's nest in the front yard   :Clear_The_Bees_Nest_In_The_Front_Yard:
+** Purpose/Principals
+There's a bee's nest right outside of wally's window. We need to clear it.
+** Vision & Outcomes
+** Brainstorming
+** Organization
+** Reference Data
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+*** Next Actions
+**** NEXTACTION Search for an exterminator in the woodstock area who can help with clearing bees.
+:PROPERTIES:
+:CATEGORY: research-15min
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from              [2025-06-25 Wed 09:19]
+:END:

@@ -1,0 +1,18 @@
+* Garbage disposal fix   :Garbage_Disposal_Fix:
+** Purpose/Principals
+** Vision & Outcomes
+** Brainstorming
+** Organization
+** Reference Data
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+**** DONE Awaiting word from Cornel's plumbing on a 2-hour maintenance window on the morning of 6/27/2025
+CLOSED: [2025-06-28 Sat 20:50]
+:LOGBOOK:
+- State "DONE"       from "WAITINGFOR" [2025-06-28 Sat 20:50]
+- State "WAITINGFOR" from              [2025-06-26 Thu 08:46]
+:END:
+
+*** Next Actions

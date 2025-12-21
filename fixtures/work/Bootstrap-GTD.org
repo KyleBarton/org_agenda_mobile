@@ -1,0 +1,402 @@
+* Bootstrap GTD   :BootstrapGtd:
+** Purpose/Principals
+Create a system that allows me to properly process work such that it's
+actionable on the "front end", rather than the "back end"
+(e.g. just-in-time decisions).  Achieve "mind like water".
+
+^ These are sort of ongoing principals. They extend beyond the scope
+of this particular project.
+** Vision & Outcomes
+Get GTD working and all your INs in a near-zero state.
+
+Get to "Level 2" in GTD master (e.g., this system helps in a pinch, rather than hurts).
+** Brainstorming
+Email should be neither where I store actions, waiting fors, or
+someday maybes. I should only keep the email if the email /itself/ is
+important. The information therein should be moved to my agenda
+system.
+** Organization
+*** <2023-07-21>
+It took 4.5 hours to fully get clear and current at weekly review
+today. Gotta find a way to make it shorter.
+*** <2023-08-11>
+Last couple of weeks it's been a lot closer to 3 hours. Much more
+manageable. Don't worry about adding efficiencies (beyond just making
+your tools fun to use) right now.
+*** <2023-08-18>
+Going way faster now. Probably won't even hit two hours this week. 2.5
+hours is probably an achievable mean, which is very doable. Also, more
+importantly - it's starting to feel good!
+
+Probably worth pointing out explicitly that this is a long
+"bootstrap". I'm literally considering this a bootstrap situation
+until I hit level 2, which could be 1 year plus. That's ok. Be patient
+with it.
+*** <2025-06-25>
+I'm going to re-do most of my labels, because I'm not going to use GTD
+for work for the time being. So "personal-" tags should just remove
+the prefix, and "work-" tags indicate tasks that I probably shouldn't
+be tracking.
+
+Additionally, I'm going to break out the "online" category into more specific stuff:
+- Coding
+- Writing
+- ... research?
+** Reference Data
+*** Flow
+I've drawn a diagram for this flow that can be found here:
+[[file:~/Dropbox/Photos/ReferencePhotos/GTD_Flow_Basic.jpg][GTD Basic Flow]]
+*** Categories
+Writing down categories here as needed - helpful for labels that aren't immediately obvious
+**** waiting-timed-feedback
+Using waiting-timed-feedback as my category for "speak now or forever hold your piece" waiting fors
+**** awaiting-other-action
+This indicates that another NextAction or WaitingFor item needs to
+complete before this item can proceed. Generally this applies to an
+item that is in WaitingFor and will transition to NextAction once the
+other actionable has been accomplished.
+**** rest-of-the-owl
+Sometimes, you have a multi-step project, but a time and understanding
+of how you'll tackle it all at once. Some housework will often fall
+into this bucket, where you just gotta take a day or half day and get
+after it. In those cases, it's good to track the work for the purposes
+of review, but your NextActions may be pretty composite, and this
+category is just saying that this is OK, and your intention is to just
+tackle it.
+
+NOTE this should really only be for tasks you intend to tackle
+imminently (like in the next week). Consider these tasks high-risk and
+treat with cynicism if you see them popping up as unfinished in weekly
+reviews. The nature of these tasks is that they cannot fester, or they
+need to be decomposed more thoroughly.
+**** projects-on-ice
+Specific tag for Someday/Maybes that were once projects and might be
+again, but aren't happening any time soon. Remember to kill the
+project tag when you move them and delete the file!
+*** Sorting
+**** org-sort-entries lets me sort out the DONEs
+There is a todo option (o I think)
+*** Clocking in and out
+- You can use "I" and "O" to clock in and out, respectively, from the agenda view
+- Using this + the agenda view would be SO nice if I ever wanted to
+  get into consulting, so that I could properly track my time.
+*** Weekly Review Process
+As it stands today, my weekly review process works like so:
+**** Get Clear
+- Get through active INs
+**** Get Current
+- Review next actions
+- Review waiting fors
+- Review Projects list
+**** Get Creative
+- Review Someday/Maybes
+- Clear INs created during the process
+**** (Optional) do some cleanup
+- Archive the finished work in Misc
+- Re-file anything that needs re-filing
+
+This doesn't need to be done every time. Not even most times. But as
+you feel the need.
+*** Helpful reference for the weekly/daily agenda
+- "v-l" -> toggle log mode. Actually shows when things are done
+- "v-a" -> toggle archives mode. Shows archived entries
+** Future Work To Consider
+*** Someday Maybe
+**** SOMEDAYMAYBE Get Refiling to automatically send WAITINGFORs to the correct project template place
+:PROPERTIES:
+:CATEGORY: kyle-config
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2023-07-01 Sat 17:32]
+- State "NEXTACTION" from "IN"         [2023-06-30 Fri 22:36]
+:END:
+**** SOMEDAYMAYBE Get Refiling to automatically send NEXTACTIONs to the correct project template place
+:PROPERTIES:
+:CATEGORY: kyle-config
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2023-07-01 Sat 18:02]
+- State "NEXTACTION" from "IN"         [2023-06-30 Fri 22:36]
+:END:
+
+**** SOMEDAYMAYBE Make it possible to create a project from an IN
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2023-07-05 Wed 18:23]
+:END:
+
+**** SOMEDAYMAYBE Do Misc.Org and Inbox.org really need to be separate files?
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2023-07-08 Sat 14:09]
+:END:
+Categories + TODO status organize it for me, largely
+
+I think for my own sanity they need to be separate today. But I will explore consolidating in the future.
+**** SOMEDAYMAYBE Consider a regular time on monday to start & follow-up on all agenda- categories
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2023-07-08 Sat 15:38]
+:END:
+
+**** SOMEDAYMAYBE Need a semantic search for org-agenda
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2023-07-11 Tue 18:29]
+:END:
+E.g. don't find me all nodes with the title "ERP" - instead, find me all projects.
+Same for categories - I want to narrow my next actions by, for instance, `work-online-15min`. I can do that with narrowing but this can take a lot of keystrokes. A search functionality would help here
+**** SOMEDAYMAYBE Explore Alternatives to Mobile capture from IFTT Email.
+:PROPERTIES:
+:CATEGORY: research-30min
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2023-07-21 Fri 16:27]
+- State "NEXTACTION" from "IN"         [2023-07-08 Sat 14:08]
+:END:
+IFTT only sends 30 emails per day
+This might not be the capture model I actually want.
+Can I just get gmail to do this??
+**** SOMEDAYMAYBE Assemble physical GTD tools
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2023-07-23 Sun 11:24]
+:END:
+- Stickies
+- In tray
+- Lists?
+**** SOMEDAYMAYBE Revisit org-agenda-sorting-strategy
+:PROPERTIES:
+:CATEGORY: yakshaving-30min
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2023-08-07 Mon 15:47]
+:END:
+I have a value set in my gtd config, but I don't really understand
+what it does and what it can do for me.
+**** SOMEDAYMAYBE Archiving in org-agenda isn't easily undo-able. How to handle that?
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2023-08-17 Thu 10:10]
+:END:
+**** SOMEDAYMAYBE explore email options for emacs.
+:PROPERTIES:
+:CATEGORY: yakshaving-90min
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2023-08-21 Mon 16:25]
+:END:
+Gnus, mu4e, notmuch... these seem like the top ones?
+Needs to integrate well with GTD or what's the point.
+***** <2023-09-12>
+Based on feedback from Andrew and the general online
+population... Mu4e is the way to go.
+**** SOMEDAYMAYBE Address: Your archived projects don't get their archived file counted in agenda view. Unfortunate for task tracking
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2023-09-11 Mon 17:30]
+:END:
+***** <2023-09-12>
+It looks like I can archive the entire project in the folder? So maybe
+I should just do that... and yearly do a cleanout of archived projects
+or something.
+
+They'll be easy to identify because the actual project file will be 0kb
+**** SOMEDAYMAYBE It'd be nice if my GTD solution could link to other projects easily (similar to slack's @ commands)
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2023-10-06 Fri 16:08]
+:END:
+**** SOMEDAYMAYBE Why does follow mode put my candidate at the bottom of the buffer rather than the top?
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2024-06-23 Sun 10:33]
+:END:
+
+**** SOMEDAYMAYBE Change arrangement in agenda view
+:PROPERTIES:
+:CATEGORY: yakshaving-45min
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2024-06-25 Tue 08:07]
+:END:
+Project should be first. Multi-line or descriptions cut off?
+
+Note that this is not really a problem with your big screen, just in
+laptop view. In that case, it looks fine. Maybe something to work on
+later. Alternatively, just figure out a better font height balance
+when you're on your laptop.
+**** SOMEDAYMAYBE Cap project tag length
+:PROPERTIES:
+:CATEGORY: coding-30min
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2024-06-30 Sun 09:21]
+- State "NEXTACTION" from "IN"         [2023-07-18 Tue 09:36]
+:END:
+
+**** SOMEDAYMAYBE Cap project filename length
+:PROPERTIES:
+:CATEGORY: coding-30min
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2024-06-30 Sun 09:21]
+- State "NEXTACTION" from "IN"         [2023-07-18 Tue 09:37]
+:END:
+
+**** DONE Figure out how to do this with android
+CLOSED: [2025-06-25 Wed 15:51]
+:LOGBOOK:
+- State "DONE"       from "SOMEDAYMAYBE" [2025-06-25 Wed 15:51]
+- State "SOMEDAYMAYBE" from "IN"         [2023-06-30 Fri 22:51]
+:END:
+
+***** <2025-06-25>
+Moving this to its own project - I need a readonly thing on android,
+minimum, for this to be worth my time.
+** Actionables
+*** Waiting For
+You really shouldn't ever need to put something here, since it's a
+fully solo project.
+*** Next Actions
+**** NEXTACTION Make project file names filter by allowed chars too
+:PROPERTIES:
+:CATEGORY: yakshaving-30min
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from "IN"         [2023-07-18 Tue 09:36]
+:END:
+Probably just letters and numbers
+**** DONE Write down a location where you will document your gtd tooling and flow
+CLOSED: [2024-07-07 Sun 18:30]
+:PROPERTIES:
+:CATEGORY: personal-online-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2024-07-07 Sun 18:30]
+- State "NEXTACTION" from "IN"         [2023-07-06 Thu 19:44]
+:END:
+
+Gotta decide on a next action fromt here. I mean it's here for now I
+guess. We can translate this to Org-roam when the time comes but it's
+really no hurry.
+**** DONE Document a first draft of your weekly review process in the reference data of this project.
+CLOSED: [2024-06-24 Mon 20:29]
+:PROPERTIES:
+:CATEGORY: personal-online-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2024-06-24 Mon 20:29]
+- State "NEXTACTION" from "IN"         [2023-07-08 Sat 17:53]
+:END:
+
+***** <2023-08-18>
+Downgraded this from a 45 minute to a 15 minute task. You basically
+know your weekly review process already, stop being so afraid of
+documentation.
+**** DONE Get gtd.el into configuration.org
+CLOSED: [2023-08-05 Sat 16:04]
+:PROPERTIES:
+:CATEGORY: personal-online-30min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-08-05 Sat 16:04]
+- State "NEXTACTION" from "IN"         [2023-07-08 Sat 13:25]
+:END:
+Either by reference or just transition in-line.
+
+***** <2023-08-05>
+I'm actually loading it in .emacs right now. The tangle is a little
+weird. I'd like to turn this into a package, but until then, it's a
+bit much to just paste right into configuration.org.
+
+I'm leaving a note to have a larger evaluation of how I organize my
+elisp code. Literate is fine for the administrative stuff, but I might
+want to start vending more packages.
+**** DONE Properly handle a quit action in the project capture prompt in floating frame
+:PROPERTIES:
+:CATEGORY: personal-yakshaving-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-29 Sat 17:18]
+- State "NEXTACTION" from "IN"         [2023-07-03 Mon 16:49]
+:END:
+**** DONE Make your Someday/Maybe nodes a more readable color - grey is too dark.
+:PROPERTIES:
+:CATEGORY: personal-yakshaving-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-29 Sat 17:44]
+- State "NEXTACTION" from "IN"         [2023-07-23 Sun 11:26]
+:END:
+
+**** DONE set up your weekly reviews on the calendar
+:PROPERTIES:
+:CATEGORY: personal-online-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-08 Sat 14:54]
+- State "NEXTACTION" from "IN"         [2023-07-08 Sat 13:51]
+:END:
+
+**** DONE Remove characters that break tags in your project capture
+:PROPERTIES:
+:CATEGORY: personal-online-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-17 Mon 23:04]
+- State "NEXTACTION" from "IN"         [2023-07-05 Wed 20:39]
+:END:
+You know that '(', ')', and '-' at least don't work. Probably all
+special characters should go, realistically.
+**** DONE Refile from the agenda map
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-05 Wed 18:25]
+- State "NEXTACTION" from "IN"         [2023-07-05 Wed 18:16]
+:END:
+
+**** DONE Manually refile this
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-05 Wed 17:35]
+- State "NEXTACTION" from "IN"         [2023-07-05 Wed 17:35]
+:END:
+Prove that auto-save will save your bacon when you start agenda anyway.
+**** DONE Find a way to return focus to org-agenda buffer after assigning category
+:PROPERTIES:
+:CATEGORY: personal-yakshaving-30min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-16 Sun 13:34]
+- State "NEXTACTION" from "IN"         [2023-07-06 Thu 07:57]
+:END:
+**** DONE Confirm that inbox works with capture
+:LOGBOOK:
+- State "DONE"       from "IN"         [2023-07-05 Wed 17:26]
+:END:
+**** DONE Confirm that I can refile to a newly created project
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-05 Wed 17:31]
+- State "NEXTACTION" from "IN"         [2023-07-05 Wed 17:30]
+:END:
+
+**** DONE Confirm category completing-read works and I can assign categories
+:PROPERTIES:
+:CATEGORY: kyle-config
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-05 Wed 17:33]
+- State "NEXTACTION" from "IN"         [2023-07-05 Wed 17:30]
+:END:
+**** DONE Assign the Misc tag to Misc.org
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-05 Wed 18:18]
+- State "NEXTACTION" from "IN"         [2023-07-05 Wed 18:17]
+:END:
+
+**** DONE Assign all next actions to time-based categories to fit your calendar
+:PROPERTIES:
+:CATEGORY: personal-online-30min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-08 Sat 14:51]
+- State "NEXTACTION" from "IN"         [2023-07-06 Thu 07:51]
+:END:
+E.g. `work-online-15minutes`, `work-online-30minutes`, etc
+**** DONE Assign a second thing to a category in order to verify completing-read
+:PROPERTIES:
+:CATEGORY: kyle-config
+:END:
+:LOGBOOK:
+- State "DONE"       from "IN"         [2023-07-05 Wed 17:32]
+:END:

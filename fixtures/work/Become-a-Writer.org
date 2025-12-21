@@ -1,0 +1,170 @@
+* Become a Writer   :Become_A_Writer:
+** Purpose/Principals
+It's a way to contribute to this world in a way that I actually
+value. Art instead of entrepeneurship.
+** Vision & Outcomes
+** Brainstorming
+I probably should start by reserving some time to write a short story. This can serve dual purpose:
+- Get the practice in, actually writing
+- Evaluate my tooling/setup today, and come up with potential tweaks in the future.
+** Organization
+*** <2023-09-01>
+I've actually spent some time on this lately, and it's been fun. I am
+trying to take a more methodical approach to skill building
+(e.g. working on character, dialog, etc). I've also got some latent
+story ideas that I should work through.
+*** <2023-09-10>
+*Writing topic: the alienation of not speaking for others.*
+From my 2023-09-10 text chain with Travis. I'm very conscious of
+speaking only for myself, rather than for others (e.g. "I'm boned"
+rather than "we're boned"). I find this respectful, but it occurs to
+me that it removes opportunities for me to build situational bonds
+between people around me - that is, there's social capital to instead
+saying "we're boned".
+*** <2023-09-12>
+Haven't spent much time on this in the last week. This competes with
+my other code projects as well. But that's ok. I like them all.
+*** <2024-06-30> 
+You should get back to just writing some quick prompts, hence the
+action item to create a writingprompts alt. Just air out some ideas,
+man.
+** Reference Data
+** Future Work To Consider
+*** Someday Maybe
+**** SOMEDAYMAYBE Write a book about trust
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2022-11-26 Sat 16:13]
+:END:
+**** SOMEDAYMAYBE You could write about the experience of reading a trilogy
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "IN"         [2024-01-30 Tue 18:18]
+:END:
+
+**** DONE Buy Writing with Style
+CLOSED: [2024-06-23 Sun 09:26]
+:PROPERTIES:
+:CATEGORY: books-to-read
+:END:
+:LOGBOOK:
+- State "DONE"       from "SOMEDAYMAYBE" [2024-06-23 Sun 09:26]
+- State "SOMEDAYMAYBE" from "IN"         [2023-07-08 Sat 14:05]
+:END:
+It's a book by an economist columnist. While the content can be iffy, they are technically excellent writers.
+https://profilebooks.com/work/writing-with-style/?utm_campaign=a.coronavirus-special-edition&utm_medium=email.internal-newsletter.np&utm_source=salesforce-marketing-cloud&utm_term=7/8/2023&utm_id=1676506
+** Actionables
+*** Waiting For
+*** Next Actions
+**** NEXTACTION Spend an hour writing a dialog between two characters
+:PROPERTIES:
+:CATEGORY: writing-60min
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from              [2023-08-23 Wed 21:31]
+:END:
+Their speaking style must be distinct. Don't get cute with weird
+accents. Something should drive the conversation forward.
+**** NEXTACTION Finish writing the initial draft of the future-vision killer short story
+:PROPERTIES:
+:CATEGORY: writing-90min
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from              [2024-06-23 Sun 08:27]
+:END:
+You've definitely put 90 minutes into it, but it's just taken longer.
+Can't start revising until you have it fully finished.
+**** NEXTACTION Read Anne Lamott Bird by Bird
+:PROPERTIES:
+:CATEGORY: books-to-read
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from "IN"         [2024-02-11 Sun 19:21]
+:END:
+https://www.goodreads.com/book/show/12543.Bird_by_Bird
+**** NEXTACTION Get a copy of Strunk & White
+:PROPERTIES:
+:CATEGORY: books-to-read
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from "IN"         [2024-05-13 Mon 11:01]
+:END:
+https://www.goodreads.com/book/show/33514.The_Elements_of_Style
+**** DONE +Figure out how to re-enable that+ design a +soft+ custom emacs theme for writing
+CLOSED: [2025-06-25 Wed 09:15]
+:PROPERTIES:
+:CATEGORY: personal-ongoing
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2025-06-25 Wed 09:15]
+- State "NEXTACTION" from "SOMEDAYMAYBE" [2024-06-23 Sun 10:28]
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2024-05-23 Thu 23:52]
+- State "NEXTACTION" from "IN"         [2023-08-24 Thu 15:36]
+:END:
+Easier on the eyes
+***** <2023-12-29>
+I figured out there's no way to dynamically theme a specific buffer.
+Furthermore, just enabling `poet-theme` when I write has been an issue
+because it changes the faces of some org elements that don't get
+changed back when I enable the `doom-one` theme. So really, I need to
+find the specific background and font that I like for a narrowed
+buffer, and enable it thusly, leaving other faces alone. Then
+reverting to doom-one when I'm not writing.
+***** <2024-06-23>
+In progress! I'm writing this with my wip theme right now, and writing
+prose 100% feels nicer.
+***** <2024-07-07>
+Small idea:
+Theme should highlight the current line in org agenda ideally
+**** DONE Make an alt account for writing prompts
+CLOSED: [2024-06-30 Sun 19:42]
+:PROPERTIES:
+:CATEGORY: personal-online-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2024-06-30 Sun 19:42]
+- State "NEXTACTION" from "IN"         [2024-06-26 Wed 22:12]
+:END:
+Maybe itsafirstdraftok or something?
+**** DONE Resume writing about the Future-vision Killer (Short Story Idea)
+CLOSED: [2024-06-23 Sun 08:27]
+:PROPERTIES:
+:CATEGORY: personal-online-90min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2024-06-23 Sun 08:27]
+- State "NEXTACTION" from "SOMEDAYMAYBE" [2023-09-01 Fri 15:12]
+- State "SOMEDAYMAYBE" from "WAITINGFOR" [2023-09-01 Fri 15:12]
+- State "WAITINGFOR" from              [2023-09-01 Fri 15:12]
+:END:
+You've got some thoughts here, just gotta sit down and start drafting.
+Minimum 90 min writing probably, just to get an initial draft.
+**** DONE Spend 30 minutes developing a character
+CLOSED: [2023-08-23 Wed 21:31]
+:PROPERTIES:
+:CATEGORY: personal-online-30min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-08-23 Wed 21:31]
+CLOCK: [2023-08-23 Wed 20:59]--[2023-08-23 Wed 21:31] =>  0:32
+CLOCK: [2023-08-22 Tue 21:08]--[2023-08-22 Tue 21:28] =>  0:20
+- State "NEXTACTION" from              [2023-08-22 Tue 20:40]
+:END:
+Aim for maximum exposition with limited prose. PITHY!
+***** <2023-08-22>
+Owe 10 minutes on this big guy.
+**** DONE Spend an hour writing about anything at all
+CLOSED: [2023-08-22 Tue 19:32]
+:PROPERTIES:
+:CATEGORY: personal-online-60min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-08-22 Tue 19:32]
+CLOCK: [2023-08-22 Tue 18:32]--[2023-08-22 Tue 19:32] =>  1:00
+- State "NEXTACTION" from              [2023-08-22 Tue 13:24]
+:END:
+**** NEXTACTION Write the Crow POV short story - draft 1
+:PROPERTIES:
+:CATEGORY: writing-90min
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from "IN"         [2025-06-27 Fri 14:53]
+:END:

@@ -1,0 +1,86 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/kylebarton/Dropbox/Local/Org/gtd/work/Build-a-Finances-Reporting-Website-on-kyleandzoebarton.org
+
+
+* Build a Finances Reporting Website on kyleandzoebarton   :Build_A_Finances_Reporting_Website_On_Kyleandzoebarton:
+:PROPERTIES:
+:ARCHIVE_TIME: 2024-05-23 Thu 23:45
+:ARCHIVE_FILE: ~/Dropbox/Local/Org/gtd/work/Build-a-Finances-Reporting-Website-on-kyleandzoebarton.org
+:ARCHIVE_CATEGORY: Build-a-Finances-Reporting-Website-on-kyleandzoebarton
+:END:
+** Purpose/Principals
+Something like finances.kyleandzoebarton.com You've gotten a ledger
+file that you like, and it's up to date. Can you translate it to data
+served via an API for a website that shows vega graphs?
+
+AWS SAM might be the way to go here.
+** Vision & Outcomes
+This should replace the "Family Finances" reporting that you currently
+do in org-roam. Eventually, you'll want to backfill a bit if you can.
+** Brainstorming
+** Organization
+*** <2023-10-27>
+This has kind of organically taken on new light as I explore elm for
+the finances website. I'm landing on more of an SPA for the whole
+kyleandzoebarton.com website, with function-specific endpoints for
+various functions (e.g. gtd, finances, maybe nextcloud backed by
+dropbox?)
+
+Nothing really specific to track right now.
+** Reference Data
+*** Github Project
+https://github.com/KyleBarton/KyleAndZoeBartonFinancesWebsite
+You gotta push your WIP up soon.
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+*** Next Actions
+**** DONE Push the current draft of your website up to the github project
+CLOSED: [2023-10-27 Fri 13:43]
+:PROPERTIES:
+:CATEGORY: personal-online-15min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-10-27 Fri 13:43]
+- State "NEXTACTION" from              [2023-10-06 Fri 15:47]
+:END:
+The data you have hard-coded isn't sensitive really, and not large. Plus it's a private project.
+**** DONE Figure out how to get your vega lite graphs to load data from an authenticated URL
+CLOSED: [2024-05-23 Thu 23:45]
+:PROPERTIES:
+:CATEGORY: personal-online-60min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2024-05-23 Thu 23:45]
+- State "NEXTACTION" from              [2023-09-29 Fri 17:41]
+:END:
+
+This didn't actually work. Moving to elm-charts because I want to be
+100% in elm and there's no way to do that with a vega engine right
+now.
+**** DONE Try to recreate your old Google drive graphs in vega lite
+CLOSED: [2023-09-29 Fri 17:41]
+:PROPERTIES:
+:CATEGORY: personal-online-90min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-09-29 Fri 17:41]
+- State "NEXTACTION" from              [2023-09-12 Tue 16:36]
+:END:
+You tried with vega, but the details around formatting numbers look
+way easier with vega lite. And it just seems more appropriate for your
+needs.
+***** <2023-09-29>
+This is done and lives in my org-roam. Will migrate up to the Github
+project soon.
+**** NEXTACTION Figure out how to get AWS costs down
+:PROPERTIES:
+:CATEGORY: personal-online-60min
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from "IN"         [2024-05-13 Mon 11:02]
+:END:
+Natgateway is the killer. Maybe bring it down to a single private subnet somehow?

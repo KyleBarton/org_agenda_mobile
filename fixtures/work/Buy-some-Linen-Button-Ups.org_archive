@@ -1,0 +1,73 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/kylebarton/Dropbox/Local/Org/gtd/work/Buy-some-Linen-Button-Ups.org
+
+
+* Buy some Linen Button Ups   :BuySomeLinenButtonUps:
+:PROPERTIES:
+:ARCHIVE_TIME: 2025-06-25 Wed 15:48
+:ARCHIVE_FILE: ~/Dropbox/Local/Org/gtd/work/Buy-some-Linen-Button-Ups.org
+:ARCHIVE_CATEGORY: Buy-some-Linen-Button-Ups
+:END:
+** Purpose/Principals
+It might be time to dress myself as an adult more often. If I'm going
+to, I should do it with Linen button-ups, because they look comfy AF.
+** Vision & Outcomes
+** Brainstorming
+** Organization
+*** <2023-08-11>
+The everlane one is fine, but kind of a pirate shirt... definitely
+start looking closer at the collars when you buy.
+*** <2025-06-25>
+I found some great stuff from Marine layer, and I'm feeling pretty
+good about it! Should be ok to close this now.
+** Reference Data
+*** Linen Options
+**** MadeWell
+- Nice looking short sleeve: https://www.madewell.com/linen-easy-short-sleeve-shirt-in-print-99106981730.html
+- Another: https://www.madewell.com/linen-perfect-short-sleeve-shirt-99106981714.html
+- Nothing long-sleeve, looks like :(
+**** Everlane
+- Long sleeve! I like the blue https://www.everlane.com/products/mens-linen-stndrd-fit-shirt-blue-white
+- Love this one, but it's clearance so might go away: https://www.everlane.com/products/mens-relaxed-linen-ls-camp-shirt-light-blue
+  - Bought - meh
+**** Alex Crane
+- This is fantastic, but $155, so kinda fancy https://alexcrane.co/products/playa-shirt-moss
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+**** DONE Tracking Everlane Linen Delivery
+CLOSED: [2023-08-11 Fri 16:49]
+:PROPERTIES:
+:CATEGORY: personal-shipment-delivery
+:END:
+:LOGBOOK:
+- State "DONE"       from "WAITINGFOR" [2023-08-11 Fri 16:49]
+- State "WAITINGFOR" from "IN"         [2023-08-02 Wed 20:44]
+:END:
+https://www.ups.com/track?track=yes&trackNums=1ZB350980300315989&loc=en_US&requester=ST/trackdetails
+*** Next Actions
+**** DONE Buy One Long Sleeve and one Short Sleeve linen Shirt
+CLOSED: [2025-06-25 Wed 09:10]
+:PROPERTIES:
+:CATEGORY: personal-online-30min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2025-06-25 Wed 09:10]
+- State "NEXTACTION" from "WAITINGFOR" [2023-08-11 Fri 16:49]
+- State "WAITINGFOR" from "NEXTACTION" [2023-08-04 Fri 15:34]
+- State "NEXTACTION" from              [2023-08-04 Fri 15:34]
+:END:
+
+This is /after/ the Everlane one I'm waiting on shipping.
+**** DONE Shop Madewell and compile a list of products you like
+:PROPERTIES:
+:CATEGORY: personal-online-30min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-07-30 Sun 15:51]
+- State "NEXTACTION" from              [2023-07-08 Sat 13:32]
+:END:
+

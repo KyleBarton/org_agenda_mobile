@@ -1,0 +1,32 @@
+* Create a video game with Peter   :Create_A_Video_Game_With_Peter:
+** Purpose/Principals
+Create a video game with peter. We've done some groundwork already -
+probably going to design the system in Godot, and it's a puzzle-based
+game in set in an Egyptian dig site.
+** Vision & Outcomes
+** Brainstorming
+** Organization
+** Reference Data
+Story ideas brainstormed here:
+https://docs.google.com/document/d/1e47TSfm4LZPsAPqSreWFthXenvYBLJD8O-VYTAmxwZ0/edit#heading=h.7qqte0jbih7p
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+*** Next Actions
+**** NEXTACTION Build a test game in godot
+:PROPERTIES:
+:CATEGORY: coding-90min
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from              [2024-06-23 Sun 09:57]
+:END:
+Maybe tetris? Just to get more comfortable End to End.
+**** SOMEDAYMAYBE Finish the donut series on blender
+:PROPERTIES:
+:CATEGORY: coding-ongoing
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2025-06-25 Wed 09:15]
+- State "NEXTACTION" from              [2024-06-23 Sun 09:57]
+:END:

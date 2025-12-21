@@ -1,0 +1,59 @@
+* Engage in FOSS Community   :Engage_In_Foss_Community:
+** Purpose/Principals
+I'd like to be more active in the open source world, and there are a
+number of ways to do that. I can contribute to existing projects,
+publish packages, and try to add documentation to projects I'm excited
+about.
+** Vision & Outcomes
+I can point to a few key contributions, and feel confident in further
+engagement by understanding the social norms of FOSS.
+
+In a perfect world, this accelerates my career options as well.
+** Brainstorming
+From initial IN:
+- Pick some projects to watch/participate in
+  - Nushell? https://github.com/nushell/nushell?tab=readme-ov-file
+    - probably should try using it for a bit
+  - Evil?
+  - elm-charts?
+- Release some simple packages
+  - format asUsd for Elm, for instance?
+- Track issues/questions/IRC channels etc
+** Organization
+*** <2024-08-09>
+**** Hledger
+I've tried with hledger a bit - I really love the software
+I should probably join the matrix chat
+I've looked at this issue because I think the csv rules reader is interesting: https://github.com/simonmichael/hledger/issues/2162
+But I'm totally lost, both on the desired behavior and how to read the code
+Probably need some advice on how to get started
+*** <2025-06-25>
+I've made contributions to Zed and it was a good time. Will maybe
+revisit at some point. The hledger issue could be worked on too.
+Overall I'm not pushing this right now but might become something I'm
+more into later.
+** Reference Data
+** Future Work To Consider
+*** Someday Maybe
+**** DONE Make an open source contribution
+CLOSED: [2025-06-25 Wed 15:44]
+:LOGBOOK:
+- State "DONE"       from "SOMEDAYMAYBE" [2025-06-25 Wed 15:44]
+- State "SOMEDAYMAYBE" from "IN"         [2023-07-27 Thu 20:56]
+:END:
+revisit NuShell maybe?
+
+***** <2023-09-05>
+Open source projects you could contribute to:
+emacs
+nushell
+some new testing library
+spring stuff?
+arch/other Linux distro project
+your own project - e.g. org db bevy
+Haskell stuff? E.g. GHC
+***** <2025-06-25>
+Made some open source contributions this year to Zed. It was fun! I also have the hledger issue to look at someday.
+** Actionables
+*** Waiting For
+*** Next Actions

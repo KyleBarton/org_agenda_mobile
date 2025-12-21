@@ -1,0 +1,173 @@
+* Launch office website for kyleandzoebarton   :LaunchOfficeWebsiteForKyleandzoebarton:
+** Purpose/Principals
++Working plan is to launch with NextCloud.+
+There is no working plan :(
+** Vision & Outcomes
+** Brainstorming
+*** What to do without K8S?
+Options
+- Run K8S myself on a server
+  - if that's the case, is it really better than bare-metal or a basic docker config?
+
+- Find a serverless option?
+  - Surely one exists
+
+- Build one
+  - in rust!
+    - I mean this becomes a giant science project at this point
+
+- Stick with Dropbox
+- Move to a different hosted solution
+  - Can it be whitelisted behind kyleandzoebarton.com?
+
+**** WebDAV
+I could very easily just set up a WebDAV server (directly from apache) and see how that works with a client?
+It seems like it's a bit old, but reliable generally.
+
+I need it to support versioning, so I need to check for that or search for DirectV
+
+I mean without a proper use system and a basic web app, I don't see
+Zoe or other family using it. again, science-experiment territory.
+
+Seems like there's a front-end available via filestash? https://www.filestash.app/
+Idk, it doesn't appear to include a folder sync so not super interesting to me yet.
+
+**** Icedrive
+Really compelling lifetime plan: https://icedrive.net/lifetime-plans
+
+Maybe download the app and see how it behaves with emacs?
+
+Doesn't really help with the science project, but maybe this is just
+the more mature approach.
+
+Then again, why not just use dropbox? Idk.
+
+
+Also it's not clear that I can whitelabel this.
+**** pydio
+Seems like a fairly mature self-hosted option. Supports S3 natively.
+
+Is technical "freemium". Not sure about its file-syncing app options either.
+** Organization
++This project is already somewhat underway. I have a EKS cluster that+
++works with ephemeral storage, but I last couldn't get it working with+
++EFS. Need to revisit.+
+
+*** <2023-07-21>
+Big step back on the infrastructure here. K8S is not an affordable
+option (unless I try Azure or GCP which... maybe). It's going to hard
+to ever justify the cost to run this as robustly as the big guys.
+
+I think the next step may be white labeling a professional solution
+here.
+*** <2023-08-04>
+Not much to report this week, but I have at least done the
+research... nothing fits. There's a way to do custom domains with MS
+365, but that's only through GoDaddy and looks weird. Also might be
+for business only?
+
+As an aside, MS 365 family might be the move to replace dropbox
+anyway, independent of this idea?
+
+If I was to pick this project up again, the first step would be one of:
+- Try to get an EC2 version working wtih Pydio
+- Try to get an EC2 version working with NextCloud
+
+Just using old-fashioned Cfn stacks, probably. It's what I know. and
+would at least give me a starting point to more reliably check out the
+software.
+
+honestly though, I'm not worrying about it. There are other projects,
+both professional and personal, that take priority right now.
+*** <2023-08-18>
+Project still on ice. Indefinitely at this time.
+*** <2023-09-12>
+Still on ice for now, but I'm thinking... maybe we just do NextCloud with EC2 and autoscaling?
+- Easier to integrate with EFS
+- Probably can stay within free-tier this way
+- Can still get the data integrity you want with S3
+*** <2023-10-27>
+Can this just be done with dropbox as the backing storage? Then I only
+need to worry about the compute later and this gets a bit simpler...
+*** <2024-06-23>
+This could probably be linked out from kyleandzoebarton.com. Some thoughts on the present day:
+- You should definitely use dropbox as a backend if that's possible.
+  You're already paying for it
+- Simplify your server design. Try just using an Ec2 for now. Dropbox
+  would make the whole thing very durable
+*** <2024-06-26>
+Not sure dropbox actually works as a backend? Given what I know now
+about the user auth. S3 might need to be the move instead.
+*** <2024-06-30>
+This is appropriately on ice, but I'm keeping the project file as I'd
+like to revive once kyleandzoebarton.com gets a little more mature.
+*** <2024-07-07>
+Progress on kyleandzoebarton.com is actually been very good, so it might be time to restart this. Probably by just trying an EC2 WIP and seeing what I learn.
+** Reference Data
+*** Financial Viability
+The original intent of this was to "replace dropbox", essentially. I'm
+also working on the hypothesis that this can be hosted on K8S. Well...
+Per the docs here: https://aws.amazon.com/eks/pricing/, even /having/
+an EKS cluster running costs $0.10/hour. That's $876 per year, and is
+obviously not competitive with dropbox.
+
+In short, K8S is bunk as an option for this. At least on EKS.
+
+** Future Work To Consider
+*** Someday Maybe
+**** SOMEDAYMAYBE Get NextCloud poc working with S3 and RDS  and plain ol EC2 ASGs
+:PROPERTIES:
+:CATEGORY: coding-90min
+:END:
+:LOGBOOK:
+- State "SOMEDAYMAYBE" from "WAITINGFOR" [2023-07-09 Sun 10:12]
+- State "WAITINGFOR" from "NEXTACTION" [2023-07-09 Sun 10:12]
+- State "NEXTACTION" from "IN"         [2023-07-08 Sat 21:28]
+:END:
+The instructions to do so are clear, and you might want this over EFS
+anyway. This gets you to the point where you can move the server into
+"cron" mode and start testing more thoroughly.
+
+Gotta take a different approach than K8S. I may still use nextcloud
+server, and then this action becomes relevant again. For now, it moves
+to Someday/maybe.
+**** DONE Get Pydio set up via basic EC2 servers on Cfn
+CLOSED: [2024-07-07 Sun 18:19]
+:LOGBOOK:
+- State "DONE"       from "SOMEDAYMAYBE" [2024-07-07 Sun 18:19]
+- State "SOMEDAYMAYBE" from "WAITINGFOR" [2023-08-04 Fri 15:02]
+- State "WAITINGFOR" from              [2023-08-04 Fri 15:02]
+:END:
+
+Not gonna do this.
+**** DONE Download Icedrive and verify if it's file-system approach works with emacs
+CLOSED: [2024-07-07 Sun 18:19]
+:LOGBOOK:
+- State "DONE"       from "SOMEDAYMAYBE" [2024-07-07 Sun 18:19]
+- State "SOMEDAYMAYBE" from "NEXTACTION" [2023-07-10 Mon 21:38]
+- State "NEXTACTION" from              [2023-07-09 Sun 11:34]
+:END:
+Not going to do this. Simplifying and trying to use Nextcloud with maybe S3? But def nextcloud.
+**** DONE Maybe I should just try and make Nextcloud work with plain old Ec2 servers
+CLOSED: [2024-07-07 Sun 18:19]
+:LOGBOOK:
+- State "DONE"       from "SOMEDAYMAYBE" [2024-07-07 Sun 18:19]
+- State "SOMEDAYMAYBE" from "IN"         [2023-07-31 Mon 15:14]
+:END:
+
+** Actionables
+*** Waiting For
+*** Next Actions
+**** DONE search online for white-labeled cloud storage solutions (or custom-domained ones, whatever)
+CLOSED: [2023-08-11 Fri 16:40]
+:PROPERTIES:
+:CATEGORY: personal-online-45min
+:END:
+:LOGBOOK:
+- State "DONE"       from "NEXTACTION" [2023-08-11 Fri 16:40]
+- State "NEXTACTION" from              [2023-07-21 Fri 19:35]
+:END:
+***** <2023-08-11>
+Closing this out as I've done significant research. I just haven't
+found what I want. Maybe time to put this project more formally on the
+back burner for now.

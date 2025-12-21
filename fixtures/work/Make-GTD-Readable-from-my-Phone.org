@@ -1,0 +1,33 @@
+* Make GTD Readable from my Phone   :Make_Gtd_Readable_From_My_Phone:
+** Purpose/Principals
+I need to be able to see next actions, arranged by project and category, on my phone.
+** Vision & Outcomes
+Basic plan:
+- Export the org agenda to a file
+- Parse that file via a web app, and serve it (maybe on Cloudflare, or S3/CloudFront)
+  - /possibly/ create a lightweight Android app on top of it.
+  - /possibly/ add authentication
+- Maybe vibe code it.
+** Brainstorming
+** Organization
+** Reference Data
+** Future Work To Consider
+*** Someday Maybe
+** Actionables
+*** Waiting For
+*** Next Actions
+**** NEXTACTION Create a regular job which exports the org agenda file. Have it drop into dropbox for now.
+:PROPERTIES:
+:CATEGORY: coding-45min
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from              [2025-06-25 Wed 16:00]
+:END:
+
+**** NEXTACTION Create the git repository which will handle this
+:PROPERTIES:
+:CATEGORY: coding-30min
+:END:
+:LOGBOOK:
+- State "NEXTACTION" from              [2025-06-25 Wed 16:00]
+:END:
