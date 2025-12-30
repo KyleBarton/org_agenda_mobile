@@ -42,7 +42,7 @@ export const TaskCard: React.FC<TaskCardProps> = ({ task, onPress }) => {
                             {getStateLabel(task.state)}
                         </Text>
                     </View>
-                    <Text variant="caption" style={styles.file}>{task.file}</Text>
+                    <Text variant="caption" style={styles.project}>{task.project || 'Misc'}</Text>
                 </View>
 
                 <Text variant="body" weight="medium" style={styles.title}>{task.title}</Text>
@@ -55,7 +55,7 @@ export const TaskCard: React.FC<TaskCardProps> = ({ task, onPress }) => {
                             </View>
                         ))}
                     </View>
-                    <Text variant="caption" style={styles.project}>{task.project || 'Misc'}</Text>
+
                 </View>
             </BlurView>
         </TouchableOpacity>

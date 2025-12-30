@@ -9,7 +9,7 @@ import { ScreenContainer } from '../components/ScreenContainer';
 import { TagFilterPanel } from '../components/TagFilterPanel';
 import { TaskCard } from '../components/TaskCard';
 import { Text } from '../components/Text';
-import { mockTasks } from '../mock/tasks';
+import { TaskRepository } from '../services/TaskRepository';
 import { colors, spacing } from '../theme';
 
 type AgendaScreenRouteProp = RouteProp<{
@@ -20,17 +20,32 @@ export const AgendaScreen = () => {
     const route = useRoute<AgendaScreenRouteProp>();
     const navigation = useNavigation();
     const filter = route.params?.filter;
+
+    const getTitle = () => {
+        switch (filter) {
+            case 'IN': return 'Inbox';
+            case 'NEXTACTION': return 'Actionables';
+            case 'WAITINGFOR': return 'Waiting';
+            default: return 'Tasks';
+        }
+    };
+
     const isScrollAtTop = useSharedValue(true);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [isFilterVisible, setIsFilterVisible] = useState(false);
     const [recentTags, setRecentTags] = useState<string[]>([]);
 
+    // Get tasks from repository
+    const allTasks = useMemo(() => TaskRepository.getTasks(), []);
+
     // Filter tasks based on the route param
-    const baseTasks = mockTasks.filter(t => {
-        if (t.scheduled || t.deadline) return false;
-        if (filter) return t.state === filter;
-        return true;
-    });
+    const baseTasks = useMemo(() => {
+        return allTasks.filter(t => {
+            if (t.scheduled || t.deadline) return false;
+            if (filter) return t.state === filter;
+            return true;
+        });
+    }, [allTasks, filter]);
 
     // Extract unique categories (tags) from baseTasks
     const categories = useMemo(() => {
@@ -58,8 +73,6 @@ export const AgendaScreen = () => {
 
     const flatListRef = useAnimatedRef<any>();
 
-    // ... existing code ...
-
     const handleSelectTag = (tag: string | null) => {
         setSelectedCategory(tag);
         if (tag) {
@@ -73,18 +86,11 @@ export const AgendaScreen = () => {
         flatListRef.current?.scrollToOffset({ offset: 0, animated: true });
     };
 
-    // ... existing code ...
 
 
 
-    const getTitle = () => {
-        switch (filter) {
-            case 'IN': return 'Inbox';
-            case 'NEXTACTION': return 'Actionables';
-            case 'WAITINGFOR': return 'Waiting';
-            default: return 'Tasks';
-        }
-    };
+
+
 
     const onTrigger = () => {
         navigation.navigate('Capture' as never);
