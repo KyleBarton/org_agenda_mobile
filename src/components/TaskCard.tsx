@@ -2,15 +2,17 @@ import { BlurView } from 'expo-blur';
 import React from 'react';
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import { OrgTask } from '../mock/tasks';
-import { borderRadius, colors, spacing } from '../theme';
+import { borderRadius, colors, spacing, typography } from '../theme';
+import { RichText } from './RichText';
 import { Text } from './Text';
 
 interface TaskCardProps {
     task: OrgTask;
     onPress?: () => void;
+    showBody?: boolean;
 }
 
-export const TaskCard: React.FC<TaskCardProps> = ({ task, onPress }) => {
+export const TaskCard: React.FC<TaskCardProps> = ({ task, onPress, showBody = false }) => {
     const getStateColor = (state: string) => {
         switch (state) {
             case 'IN': return colors.status.info;
@@ -38,14 +40,31 @@ export const TaskCard: React.FC<TaskCardProps> = ({ task, onPress }) => {
             <BlurView intensity={20} tint="light" style={styles.container}>
                 <View style={styles.header}>
                     <View style={styles.stateContainer}>
-                        <Text variant="label" style={{ color: getStateColor(task.state) }}>
-                            {getStateLabel(task.state)}
-                        </Text>
+                        {task.state && (
+                            <Text variant="label" style={{ color: getStateColor(task.state) }}>
+                                {getStateLabel(task.state)}
+                            </Text>
+                        )}
                     </View>
                     <Text variant="caption" style={styles.project}>{task.project || 'Misc'}</Text>
                 </View>
 
-                <Text variant="body" weight="medium" style={styles.title}>{task.title}</Text>
+                <Text
+                    variant="body"
+                    weight="medium"
+                    style={[
+                        styles.title,
+                        /^\d{4}-\d{2}-\d{2}$/.test(task.title) && styles.dateTitle
+                    ]}
+                >
+                    {task.title}
+                </Text>
+
+                {showBody && task.body && (
+                    <View style={styles.body}>
+                        <RichText content={task.body} />
+                    </View>
+                )}
 
                 <View style={styles.footer}>
                     <View style={styles.tags}>
@@ -89,6 +108,15 @@ const styles = StyleSheet.create({
     },
     title: {
         marginBottom: spacing.sm,
+        fontSize: 18,
+    },
+    dateTitle: {
+        fontFamily: typography.fonts.mono,
+        fontSize: 18,
+    },
+    body: {
+        marginBottom: spacing.sm,
+        color: colors.text.secondary,
     },
     footer: {
         flexDirection: 'row',

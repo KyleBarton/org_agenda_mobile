@@ -18,7 +18,7 @@ type AgendaScreenRouteProp = RouteProp<{
 
 export const AgendaScreen = () => {
     const route = useRoute<AgendaScreenRouteProp>();
-    const navigation = useNavigation();
+    const navigation = useNavigation<any>();
     const filter = route.params?.filter;
 
     const getTitle = () => {
@@ -86,12 +86,6 @@ export const AgendaScreen = () => {
         flatListRef.current?.scrollToOffset({ offset: 0, animated: true });
     };
 
-
-
-
-
-
-
     const onTrigger = () => {
         navigation.navigate('Capture' as never);
     };
@@ -146,7 +140,12 @@ export const AgendaScreen = () => {
                     style={{ flex: 1 }}
                     data={tasks}
                     keyExtractor={(item) => item.id}
-                    renderItem={({ item }) => <TaskCard task={item} />}
+                    renderItem={({ item }) => (
+                        <TaskCard
+                            task={item}
+                            onPress={() => navigation.navigate('TaskDetail', { task: item })}
+                        />
+                    )}
                     contentContainerStyle={styles.listContent}
                     showsVerticalScrollIndicator={false}
                     onScroll={scrollHandler}

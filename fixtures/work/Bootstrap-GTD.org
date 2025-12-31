@@ -258,6 +258,24 @@ fully solo project.
 - State "NEXTACTION" from "IN"         [2023-07-18 Tue 09:36]
 :END:
 Probably just letters and numbers
+***** This is a headline
+And inside, a list:
+- First item of the list
+- Second item of the list
+
+Here's another list, but numbered:
+1. First item
+2. Second item
+
+Finally, here's a checkbox:
+- [ ] First unchecked item
+- [X] Second unchecked item
+***** This is a second headline
+Let's bury some more data
+****** This is a subheadline
+More data here!
+***** 2025-12-30
+This is a timestamped headline
 **** DONE Write down a location where you will document your gtd tooling and flow
 CLOSED: [2024-07-07 Sun 18:30]
 :PROPERTIES:

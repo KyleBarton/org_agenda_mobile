@@ -7,6 +7,17 @@ export interface OrgTask {
     scheduled?: Date;
     file: string; // Which file it came from
     project?: string; // Parent header
+    children?: OrgTask[];
+    logs?: LogEntry[];
+    body?: string;
+}
+
+export interface LogEntry {
+    timestamp: Date;
+    type: 'STATE_CHANGE' | 'NOTE' | 'CLOCK';
+    from?: string;
+    to?: string;
+    note?: string;
 }
 
 const today = new Date();

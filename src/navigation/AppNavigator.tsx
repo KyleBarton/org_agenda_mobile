@@ -3,8 +3,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Clock, Inbox, Layers } from 'lucide-react-native';
 import React from 'react';
+import { OrgTask } from '../mock/tasks';
 import { AgendaScreen } from '../screens/AgendaScreen';
 import { CaptureScreen } from '../screens/CaptureScreen';
+import { TaskDetailScreen } from '../screens/TaskDetailScreen';
 import { colors } from '../theme';
 
 const Tab = createBottomTabNavigator();
@@ -73,12 +75,21 @@ const TabNavigator = () => {
     );
 };
 
+export type RootStackParamList = {
+    Agenda: undefined;
+    TaskDetail: {
+        task: OrgTask;
+        breadcrumbs?: { id: string; title: string }[];
+    };
+};
+
 export const AppNavigator = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerShown: false, presentation: 'modal' }}>
                 <Stack.Screen name="Main" component={TabNavigator} />
                 <Stack.Screen name="Capture" component={CaptureScreen} />
+                <Stack.Screen name="TaskDetail" component={TaskDetailScreen} options={{ presentation: 'card', headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     );
